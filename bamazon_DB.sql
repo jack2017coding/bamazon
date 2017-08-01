@@ -1,44 +1,43 @@
-CREATE DATABASE bamazon;
+CREATE DATABASE bamazon_DB;
 
-USE bamazon;
+USE bamazon_DB;
 
 
-create table products (
-  ItemId INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE products (
+  ItemId INT(10) NOT NULL,
   ProductName VARCHAR(45) NOT NULL,
   DepartmentName VARCHAR(45) NOT NULL,
   Price DECIMAL(10,2) NOT NULL,
-  StockQuanitiy INT NOT NULL,
-  PRIMARY KEY (ItemId)
+  StockQuanitiy INT(10) NOT NULL
 );
 
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product01", "Department01", 1.00, 11);
+VALUES (1, "Product01", "Department01", 5.00, 11);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product02", "Department02", 2.00, 12);
+VALUES (2, "Product02", "Department02", 3.25, 12);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product03", "Department03", 3.00, 13);
+VALUES (3, "Product03", "Department03", 2.99, 13);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product04", "Department04", 4.00, 14);
+VALUES (4, "Product04", "Department04", 4.00, 14);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product05", "Department05", 5.00, 15);
+VALUES (5, "Product05", "Department05", 7.21, 15);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product06", "Department06", 6.00, 16);
+VALUES (6, "Product06", "Department06", 1.12, 16);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product07", "Department07", 7.00, 17);
+VALUES (7, "Product07", "Department07", 9.99, 17);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product08", "Department08", 8.00, 18);
+VALUES (8, "Product08", "Department08", 7.49, 18);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product09", "Department09", 9.00, 19);
+VALUES (9, "Product09", "Department09", 6.79, 19);
 
 INSERT INTO products (ItemId, ProductName, DepartmentName, Price, StockQuanitiy)
-VALUES ("Product10", "Department10", 10.00, 20);
+VALUES (10, "Product10", "Department10", 4.99, 20);
